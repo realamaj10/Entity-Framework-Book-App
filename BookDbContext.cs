@@ -15,7 +15,7 @@ namespace BookManagementAppwithEntityFramework
             if (!optionsBuilder.IsConfigured)
             {
                 // Define the connection string for the MySQL database
-                string connectionString = "Server=localhost;Port=3306;Database=Library;Uid=root;Pwd=isaj10;";
+                string connectionString = "Server=localhost;Database=BookDB;User ID=root;Password=root;";
                 // Configure the context to use MySQL with automatic server version detection
                 optionsBuilder.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
             }
